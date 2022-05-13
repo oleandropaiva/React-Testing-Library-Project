@@ -14,8 +14,8 @@ describe('teste se o link app.js possui o texto Home, About, Favorite Pokémons'
     expect(firstLink).toBeInTheDocument();
     const secondLink = screen.getByText(/about/i);
     expect(secondLink).toBeInTheDocument();
-    const thirdItem = screen.getByText(/Favorite Pokémons/i);
-    expect(thirdItem).toBeInTheDocument();
+    const thirdLink = screen.getByText(/Favorite Pokémons/i);
+    expect(thirdLink).toBeInTheDocument();
   });
 });
 
