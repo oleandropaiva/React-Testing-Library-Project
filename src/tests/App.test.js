@@ -4,7 +4,7 @@ import { MemoryRouter } from 'react-router-dom';
 import App from '../App';
 
 describe('teste se o link app.js possui o texto Home, About, Favorite Pokémons', () => {
-  test('primeiro link deve possuir o texto Home, About, Favorite Pokémons', () => {
+  test('os links devem possuir o texto Home, About, Favorite Pokémons', () => {
     render(
       <MemoryRouter>
         <App />
