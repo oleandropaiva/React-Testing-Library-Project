@@ -18,14 +18,3 @@ describe('teste se o link app.js possui o texto Home, About, Favorite Pokémons'
     expect(thirdLink).toBeInTheDocument();
   });
 });
-
-/* describe('testando se o link app.js possui o texto home', () => {
-  it('Renderiza o app na tela', async () => {
-    render (
-    <MemoryRouter>
-  (<App />);
-     </MemoryRouter>
-    const linkHome = screen.getByRole('link', { name: /Home/i });
-    expect(linkHome).toBeInTheDocument();
-  });
-}); */
