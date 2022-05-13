@@ -3,15 +3,19 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import App from '../App';
 
-describe('testando se o link app.js possui o texto home', () => {
-  test('primeiro link deve possuir o texto Home', () => {
+describe('teste se o link app.js possui o texto Home, About, Favorite Pokémons', () => {
+  test('primeiro link deve possuir o texto Home, About, Favorite Pokémons', () => {
     render(
       <MemoryRouter>
         <App />
       </MemoryRouter>,
     );
-    const linkElement = screen.getByText(/home/i);
-    expect(linkElement).toBeInTheDocument();
+    const firstLink = screen.getByText(/home/i);
+    expect(firstLink).toBeInTheDocument();
+    const secondLink = screen.getByText(/about/i);
+    expect(secondLink).toBeInTheDocument();
+    const thirdItem = screen.getByText(/Favorite Pokémons/i);
+    expect(thirdItem).toBeInTheDocument();
   });
 });
 
