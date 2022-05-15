@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import App from '../App';
 
-describe('teste se o link app.js possui o texto Home, About, Favorite Pokémons', () => {
+describe('Testa o componente App', () => {
   test('os links devem possuir o texto Home, About, Favorite Pokémons', () => {
     render(
       <MemoryRouter>
