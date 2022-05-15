@@ -40,5 +40,4 @@ describe('Teste no componente Pokemon', () => {
     const imagePokemon = screen.getByRole('img', { name: 'Charmander sprite' });
     expect(imagePokemon.src).toBe('https://cdn2.bulbagarden.net/upload/0/0a/Spr_5b_004.png');
   });
-
 });
