@@ -26,4 +26,13 @@ describe('Teste no componente Pokedex', () => {
     const textButton = screen.getByText(/charmander/i);
     expect(textButton).toBeInTheDocument();
   });
+  test('Teste se é mostrado apenas um pokémon por vez', () => {
+    render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>,
+    );
+    const onePokemon = screen.getByText(/Average weight/i);
+    expect(onePokemon).toBeInTheDocument();
+  });
 });
