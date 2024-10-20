@@ -1,4 +1,4 @@
-Neste projeto, voce será capaz de:
+## Habilidades:
 
 * Utilizar os seletores (queries) da React-Testing-Library em testes automatizados.
 
@@ -10,4 +10,4 @@ Neste projeto, voce será capaz de:
 
 * Criar mocks de APIs utilizando fetch.
 
-* Testar inputs.>
+* Testar inputs.
